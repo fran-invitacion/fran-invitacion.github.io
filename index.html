@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="main.js"></script>
+    <script src="luxon.js"></script>
+    <title></title>
+</head>
+<body class="body-background">
+    <audio id="song">
+        <source src="audio/Gustavo Cerati - Vivo (Official Audio).mp3" type="audio/mpeg">
+    </audio>
+    <div class="body-content container">
+        <div style="margin-top: 70px">
+            <div class="text-white-dreaming-bold-100 text-center" style="margin-bottom: -20px;">MIS</div>
+            <div class="text-white-dreaming-bold-100 text-center">XV</div>
+            <div class="text-white-felicity-italic-100 text-center">Francina</div>
+        </div>
+        <div>
+            <img src="/images/moon-phase-vector-2.png" alt="404 Not Found" class="vector">
+            <button id="songButton" class="play-pause-button" style="background-image: url('images/play-button.png');" onclick="PlayAudio()">
+            </button>
+            <div class="text-white-josefinslab-20 text-center" style="margin-top: 30px;">Toca en el batón de play para <br> activar la música</div>
+        </div>
+        <div style="margin-top: 270px;">
+            <div class="text-white-goldenhours-italic-50 text-center">Hay momentos en la <br> vida que son <br> irrepetibles... <br> Pero con las personas <br> que más quieres estos <br> se vuelven inolvidables</div>
+        </div>
+        <div class="space-between" style="width: 70%; margin-right: auto; margin-left: auto; margin-top: 20px">
+            <div>
+                <div class="text-white-normal-65 text-center">12</div>
+                <div class="text-white-josefinslab-30 text-center">JULIO</div>
+            </div>
+            <div>
+                <div class="text-white-normal-65 text-center">21</div>
+                <div class="text-white-josefinslab-30 text-center">HORAS</div>
+            </div>
+        </div>
+        <div id="countdown" style="margin-top: 20px;">
+            <div id="title" class="text-white-normal-15 text-center" style="margin-bottom: -20px;">FALTAN</div>
+            <div id="segments" class="space-between" style="width: 70%; margin-right: auto; margin-left: auto; margin-top: 20px">
+                <div id="days">
+                    <div id="daysCount" class="text-white-normal-40 text-center">00</div>
+                    <div class="text-white-normal-12 text-center">DÍAS</div>
+                </div>
+                <div id="hours">
+                    <div id="hoursCount" class="text-white-normal-40 text-center">00</div>
+                    <div class="text-white-normal-12 text-center">HORAS</div>
+                </div>
+                <div id="minutes">
+                    <div id="minutesCount" class="text-white-normal-40 text-center">00</div>
+                    <div class="text-white-normal-12 text-center">MINUTOS</div>
+                </div>
+            </div>
+        </div>
+        <div style="width: 70%; margin-right: auto; margin-left: auto; margin-top: 60px; text-align: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" version="1.0" viewBox="16.7 16.0 480.0 480.0" zoomAndPan="magnify" style="fill: rgb(181, 176, 176);" original_string_length="1128" width="100.88156244410456px" height="100.88156244410456px"><g id="__id0_sq6tp276yj"><circle cx="256.711" cy="256" r="240" style="fill: inherit;"/></g><g id="__id1_sq6tp276yj"><path d="M256,106c-58.57704,0-106.23336,47.65597-106.23336,106.23301,0,22.3981,5.36316,46.47718,15.94059,71.56789,8.34461,19.79407,19.94779,40.28921,34.48831,60.91601,24.64987,34.96947,48.97298,58.01453,49.99667,58.97859,1.63239,1.53795,3.72044,2.30451,5.80711,2.30451,2.14113,0,4.28088-.80723,5.92498-2.41653,1.02162-.99956,25.29579-24.88321,49.90981-60.25389,33.44256-48.0558,50.39925-92.16333,50.39925-131.09658,0-58.57704-47.65632-106.23301-106.23336-106.23301Zm0,142.68114c-24.11769,0-43.73873-19.62138-43.73873-43.73907s19.62104-43.73873,43.73873-43.73873,43.73873,19.62104,43.73873,43.73873-19.62104,43.73907-43.73873,43.73907Z" style="fill: rgb(0, 0, 0);"/></g></svg>
+            <div class="text-white-lovelyn-40 text-center" style="margin-top: 10px">STEEL DISCO</div>
+            <a class="text-white-lovelyn-underlined-21 text-center cursor-pointer" style="margin-top: 10px" href="https://maps.app.goo.gl/1vewGM4S6zmXSABT8">Ver Ubicación</a>
+        </div>
+        <div style="margin-right: auto; margin-left: auto; margin-top: 100px; text-align: center;">
+            <img src="/images/check.png" style="width: 100px; height: 100px; ">
+            <div class="text-white-josefinslab-16 text-center">Por favor necesito que confirmes tu <br> asistencia antes del 20/06/2025</div>
+        </div>
+        <div class="space-between" style="margin-top: 20px; width: 50%; margin-right: auto; margin-left: auto;" onclick="OpenFabiWhatsapp()">
+            <img src="/images/whatsapp.png" style="width: 25px; height: 25px; padding-top: 7px">
+            <div class="text-white-lovelyn-underlined-35">FABI</div>
+            <div class="text-white-josefinslab-16" style="padding-top: 9px">(click)</div>
+        </div>
+        <div class="space-between" style="margin-top: 20px; width: 50%; margin-right: auto; margin-left: auto;" onclick="OpenFranWhatsapp()">
+            <img src="/images/whatsapp.png" style="width: 25px; height: 25px; padding-top: 7px">
+            <div class="text-white-lovelyn-underlined-35">FRAN</div>
+            <div class="text-white-josefinslab-16" style="padding-top: 9px">(click)</div>
+        </div>
+        <div style="width: 80%; margin-right: auto; margin-left: auto; margin-top: 60px; text-align: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" preserveAspectRatio="xMidYMid meet" style="fill: none;" version="1.0" viewBox="1.0 1.0 30.0 30.0" zoomAndPan="magnify" original_string_length="1150" width="97.86843492676763px" height="97.86843492676763px"><g id="__id2_st5qsgfjow"><path clip-rule="evenodd" d="M16 31C24.2843 31 31 24.2843 31 16C31 7.71573 24.2843 1 16 1C7.71573 1 1 7.71573 1 16C1 24.2843 7.71573 31 16 31ZM14.5889 8.8C13.6798 8.8 12.8488 9.3136 12.4422 10.1267L12.1267 10.7578C11.9912 11.0288 11.7142 11.2 11.4111 11.2H10.4C9.07452 11.2 8 12.2745 8 13.6V20.8C8 22.1255 9.07452 23.2 10.4 23.2H21.6C22.9255 23.2 24 22.1255 24 20.8V13.6C24 12.2745 22.9255 11.2 21.6 11.2H20.5889C20.2858 11.2 20.0088 11.0288 19.8733 10.7578L19.5578 10.1267C19.1512 9.31361 18.3202 8.8 17.4111 8.8H14.5889ZM16 14.4C14.6745 14.4 13.6 15.4745 13.6 16.8C13.6 18.1255 14.6745 19.2 16 19.2C17.3255 19.2 18.4 18.1255 18.4 16.8C18.4 15.4745 17.3255 14.4 16 14.4ZM12 16.8C12 14.5909 13.7909 12.8 16 12.8C18.2091 12.8 20 14.5909 20 16.8C20 19.0091 18.2091 20.8 16 20.8C13.7909 20.8 12 19.0091 12 16.8Z" fill-rule="evenodd" style="fill: rgb(181, 176, 176);"/></g></svg>
+            <div class="text-white-lovelyn-underlined-21 text-center cursor-pointer" onclick="OpenAlbum()">Album de fotos</div>
+            <div class="text-white-josefinslab-13 text-center" style="margin-top: 20px; padding-bottom: 20px;">Por último para no perderme nada de esta noche <br> especial te pido que si sacas fotos o videos de la fiesta <br> lo subas a mi álbum de fotos. </div>
+        </div>
+    </div>
+</body>
+</html>

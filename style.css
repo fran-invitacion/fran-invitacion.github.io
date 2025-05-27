@@ -1,0 +1,288 @@
+body {
+    background-color: black;
+}
+
+.body-content {
+    max-width: 415px;
+    min-width: 320px;
+    height: 100vh;
+    padding: 0px;
+    position: relative
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.body-background {
+    background-image: url('/images/background7.png '); /* Set the background image */
+    background-size: cover; /* Make the image cover the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: repeat; /* Prevent the image from repeating */
+}
+
+.vector {
+    width: 80%;
+    bottom: -70%;
+    margin: 0 auto;
+    position: relative; /* Ensure it is positioned relative to its parent */
+    z-index: 1; 
+    display: block;
+}
+
+.play-pause-button {
+    width: 50px;
+    height: 50px;
+    bottom: -65%;
+    margin: 0 auto;
+    position: relative; /* Ensure it is positioned relative to its parent */
+    background-size: cover; /* Make the image cover the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    z-index: 1; 
+    display: block;
+    background-color: transparent;
+    border: none;
+}
+
+#songButton {
+    margin-top: 20px;
+}
+
+#volumeControl {
+    bottom: -68%;
+    margin: 0 auto;
+    position: relative; /* Ensure it is positioned relative to its parent */
+    display: block;
+}
+
+.text-white-bold-140 {
+    color: white;
+    font-size: 140px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text-white-dreaming-bold-100 {
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Dreaming'
+}
+.text-white-normal-65 {
+    color: white;
+    font-size: 65px;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text-white-normal-12 {
+    color: white;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text-white-normal-15 {
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text-white-normal-40 {
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text-white-amerosa-italic-80 {
+    color: white;
+    font-size: 80px;
+    font-style: italic;
+    font-family: 'Amoresa';
+}
+
+.text-white-goldenhours-italic-80 {
+    color: white;
+    font-size: 100px;
+    font-style: italic;
+    font-family: 'GoldenHours';
+}
+
+.text-white-goldenhours-italic-50 {
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+    font-family: 'GoldenHours';
+}
+
+.text-white-amerosa-italic-30 {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Amoresa';
+}
+
+.text-white-bethany-italic-50 {
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+    font-family: 'BethanyAvanue';
+}
+
+.text-white-felicity-italic-100 {
+    color: white;
+    font-size: 100px;
+    font-style: italic;
+    font-family: 'Felicity';
+}
+
+.text-white-josefinslab-16 {
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-family: 'JosefinSlab';
+}
+
+.text-white-josefinslab-20 {
+    color: white;
+    font-size: 20px;
+    font-style: normal;
+    font-family: 'JosefinSlab';
+}
+
+.text-white-josefinslab-30 {
+    color: white;
+    font-size: 30px;
+    font-style: normal;
+    font-family: 'JosefinSlab';
+}
+
+.text-white-josefinslab-16 {
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-family: 'JosefinSlab';
+}
+
+.text-white-josefinslab-13 {
+    color: white;
+    font-size: 13px;
+    font-style: normal;
+    font-family: 'JosefinSlab';
+}
+
+.text-white-lovelyn-underlined-35 {
+    color: white;
+    font-size: 35px;
+    font-style: normal;
+    text-decoration: underline;
+    font-family: 'Lovelyn';
+}
+
+.text-white-lovelyn-40 {
+    color: white;
+    font-size: 40px;
+    font-style: normal;
+    font-family: 'Lovelyn';
+}
+
+.text-white-lovelyn-underlined-21 {
+    color: white;
+    font-size: 21px;
+    font-style: normal;
+    text-decoration: underline;
+    font-family: 'Lovelyn';
+}
+
+.click {
+
+}
+
+.text-center {
+    text-align: center;
+    position: relative;
+}
+
+.space-between {
+    justify-content: space-between;
+    display: flex;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: "Alensia";
+    src: url("fonts/Alensia.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HumberTown";
+    src: url("fonts/HumberTown.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Amoresa";
+    src: url("fonts/Amoresa.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "JosefinSlab";
+    src: url("fonts/JosefinSlab.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lovelyn";
+    src: url("fonts/Lovelyn.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Dreaming";
+    src: url("fonts/Dreaming.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GoldenHours";
+    src: url("fonts/GoldenHours.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BethanyAvanue";
+    src: url("fonts/BethanyAvanue.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Mattock";
+    src: url("fonts/Mattock.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Felicity";
+    src: url("fonts/Felicity.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
