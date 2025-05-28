@@ -295,7 +295,7 @@ body {
 
 @font-face {
     font-family: "Felicity";
-    src: url("fonts/Felicity.otf") format("truetype");
+    src: url("fonts/Felicity.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
