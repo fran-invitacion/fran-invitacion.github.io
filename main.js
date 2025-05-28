@@ -1,7 +1,31 @@
 
 document.addEventListener("DOMContentLoaded", (event) => {
     var song = document.getElementById("song");
+
     song.volume = 0.4;
+    
+    const progressEl = document.querySelector('input[type="range"]');
+    let mouseDownOnSlider = false;
+
+    song.addEventListener("loadeddata", () => {
+    progressEl.value = 0;
+    });
+    song.addEventListener("timeupdate", () => {
+    if (!mouseDownOnSlider) {
+        progressEl.value = song.currentTime / song.duration * 100;
+    }
+    });
+
+    progressEl.addEventListener("change", () => {
+    const pct = progressEl.value / 100;
+    song.currentTime = (song.duration || 0) * pct;
+    });
+    progressEl.addEventListener("mousedown", () => {
+    mouseDownOnSlider = true;
+    });
+    progressEl.addEventListener("mouseup", () => {
+    mouseDownOnSlider = false;
+    });
 });
 
 function PlayAudio() {
