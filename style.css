@@ -137,6 +137,7 @@ body {
 .text-white-felicity-italic-100 {
     color: white;
     font-size: 100px;
+    font-style: italic;
     font-family: 'Felicity';
 }
 
@@ -273,7 +274,7 @@ body {
 
 @font-face {
     font-family: "GoldenHours";
-    src: url("fonts/GoldenHours.ttf") format("truetype");
+    src: url("fonts/GoldenHours.otf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
